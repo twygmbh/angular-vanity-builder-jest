@@ -10,7 +10,7 @@ export default createBuilder<Options>((_options, context) => {
   return new Promise<BuilderOutput>(resolve => {
     if (context.target && context.target.project) {
       return runCLI({} as any, [
-        `${context.workspaceRoot}/projects/${context.target.project}/jest.config.js`
+        `${context.workspaceRoot}/projects/${context.target.project}`
       ])
         .then(() => {
           return resolve({ success: true });
