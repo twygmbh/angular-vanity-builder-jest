@@ -1,0 +1,9 @@
+{
+  "builders": {
+    "run": {
+      "implementation": "./jest",
+      "schema": "./jest/schema.json",
+      "description": "Runs Jest."
+    }
+  }
+}

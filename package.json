@@ -1,0 +1,40 @@
+{
+  "name": "@twy-gmbh/angular-vanity-builder-jest",
+  "version": "1.0.0",
+  "description": "You have an existing project and integrated `Jest` all by yourself?   **Awesome**.",
+  "main": "jest/index.js",
+  "builders": "builders.json",
+  "scripts": {
+    "build": "tsc",
+    "test": "ts-node node_modules/jasmine/bin/jasmine jest/index_spec.ts"
+  },
+  "keywords": [
+    "jest",
+    "angular"
+  ],
+  "author": "Reto Ryter",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.12",
+    "@types/node": "^11.13.4",
+    "jasmine": "^3.4.0",
+    "jasmine-node": "^1.16.2",
+    "jest": "^24.9.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.3"
+  },
+  "peerDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "@angular-devkit/architect": "^0.800.0-beta.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twygmbh/angular-vanity-builder-jest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twygmbh/angular-vanity-builder-jest/issues"
+  },
+  "homepage": "https://github.com/twygmbh/angular-vanity-builder-jest#readme"
+}
