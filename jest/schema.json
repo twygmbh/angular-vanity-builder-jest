@@ -2,14 +2,9 @@
   "$schema": "http://json-schema.org/schema",
   "type": "object",
   "properties": {
-    "run": {
-      "type": "string"
-    },
-    "args": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
+    "watch": {
+      "type": "boolean",
+      "description": "Run build when files change."
     }
   }
 }

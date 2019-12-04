@@ -16,5 +16,6 @@
     "sourceMap": true,
     "strictNullChecks": true,
     "types": ["node", "jasmine"]
-  }
+  },
+  "exclude": ["sample-application/**/*"]
 }

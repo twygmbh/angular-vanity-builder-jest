@@ -3,16 +3,13 @@ import { JsonObject } from '@angular-devkit/core';
 import { runCLI } from 'jest';
 
 interface Options extends JsonObject {
-  jestConfig: string;
+  watch: boolean;
 }
 
-export default createBuilder<Options>((_options, context) => {
+export default createBuilder<Options>((options, context) => {
   return new Promise<BuilderOutput>(resolve => {
-    console.log(_options);
-    console.log(context);
-
     if (context.target && context.target.project) {
-      return runCLI({} as any, [
+      return runCLI({ watch: options.watch } as any, [
         `${context.workspaceRoot}/projects/${context.target.project}`
       ])
         .then(() => {
