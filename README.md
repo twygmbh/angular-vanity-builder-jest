@@ -1,9 +1,12 @@
-# Jest (vanity) builder for Angular
+# ng test -> running jest
 
 You have an existing project and integrated `Jest` all by yourself?  
 **Awesome**.
 
-Your `ng test` command is broken and you can not use any builder (be it [@nrwl/jest](https://www.npmjs.com/package/@nrwl/jest) or [@angular-builders/jest](https://github.com/just-jeb/angular-builders/tree/master/packages/jest)) without messing up your already existing setup. All you want is for `ng test` to execute `jest` with your existing configured
+Your `ng test` command is broken and you can not use any builder
+(be it [@nrwl/jest](https://www.npmjs.com/package/@nrwl/jest) or
+[@angular-builders/jest](https://github.com/just-jeb/angular-builders/tree/master/packages/jest))
+without messing up your already existing setup. All you want is for `ng test` to execute `jest` with your existing configuration.
 
 [![npm version](https://img.shields.io/npm/v/@twy-gmbh/angular-vanity-builder-jest.svg) ![npm](https://img.shields.io/npm/dm/@twy-gmbh/angular-vanity-builder-jest.svg)](https://www.npmjs.com/package/@twy-gmbh/angular-vanity-builder-jest)
 

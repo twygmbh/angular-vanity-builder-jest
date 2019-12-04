@@ -4,9 +4,11 @@ const architect_1 = require("@angular-devkit/architect");
 const jest_1 = require("jest");
 exports.default = architect_1.createBuilder((_options, context) => {
     return new Promise(resolve => {
+        console.log(_options);
+        console.log(context);
         if (context.target && context.target.project) {
             return jest_1.runCLI({}, [
-                `${context.workspaceRoot}/projects/${context.target.project}/jest.config.js`
+                `${context.workspaceRoot}/projects/${context.target.project}`
             ])
                 .then(() => {
                 return resolve({ success: true });

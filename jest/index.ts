@@ -8,6 +8,9 @@ interface Options extends JsonObject {
 
 export default createBuilder<Options>((_options, context) => {
   return new Promise<BuilderOutput>(resolve => {
+    console.log(_options);
+    console.log(context);
+
     if (context.target && context.target.project) {
       return runCLI({} as any, [
         `${context.workspaceRoot}/projects/${context.target.project}`
