@@ -1,6 +1,6 @@
 {
   "name": "@twy-gmbh/angular-vanity-builder-jest",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "You have an existing project and integrated `Jest` all by yourself?   **Awesome**.",
   "main": "jest/index.js",
   "builders": "builders.json",
