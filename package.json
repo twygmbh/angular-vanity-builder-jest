@@ -20,12 +20,12 @@
     "growl": ">=1.10.0",
     "jasmine": "^3.4.0",
     "jasmine-node": "^3.0.0",
-    "jest": "^24.9.0",
+    "jest": "^29.6.1",
     "ts-node": "^8.1.0",
     "typescript": "^3.4.3"
   },
   "peerDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^29.6.1"
   },
   "dependencies": {
     "@angular-devkit/architect": "^0.800.0-beta.11"
